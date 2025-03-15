@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Vesper+Libre:wght@400;500;700;900&display=swap');
+
+@import "tailwindcss";
+
+body{
+    font-family: "Poppins", sans-serif;
+
+    overflow-x: hidden;
+    background: #050505;
+}
+
+header{
+   font-family: "Dancing Script", cursive, "cursive", "Poppins", sans-serif; 
+}
+
+.custom-toast {
+    font-size: 12px;
+  }
+  
+  .custom-toast-progress {
+    background: linear-gradient(to right, #8a7dff, #70d7ff, #ff70cf) !important;
+  }
+  
+  
+  .custom-toast {
+    font-size: 12px;
+  }
+  
+  /* Increase font size & height based on screen width */
+  @media (min-width: 640px) { /* sm */
+    .custom-toast {
+      font-size: 13px;
+    }
+  }
+  
+  @media (min-width: 768px) { /* md */
+    .custom-toast {
+      font-size: 14px;
+    }
+  }
+  
+  @media (min-width: 1024px) { /* lg */
+    .custom-toast {
+      font-size: 15px;
+    }
+  }
+  
+  @media (min-width: 1280px) { /* xl */
+    .custom-toast {
+      font-size: 16px;
+    }
+  }
+  
+  @media (min-width: 1536px) { /* 2xl */
+    .custom-toast {
+      font-size: 17px;
+    }
+  }
+  
+
+  #toggle-wrapper {
+    left: 100px;
+    transition: left 0.3s ease-in-out;
+  }
+  .nav:hover #toggle-wrapper {
+    left: 180px;
+  }
+
+
+  @keyframes spinY {
+    0%   { transform: rotateY(0deg); }
+    100% { transform: rotateY(360deg); }
+  }
